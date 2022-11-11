@@ -7,7 +7,7 @@ function start() {
     console.log('');
     console.log('Выберите тему');
     console.log('');
-    console.log('1. ntbf\n2. ntbf\n3. fghj');
+    console.log('1. Вопросы\n2. Упоротые вопросы\n3. Russian MTV');
     const readLine = readlineSync.question('>');
     let count = 0;
     // return readLine;
@@ -25,7 +25,7 @@ function start() {
                 else if (answer === 'end') {
                     return `Ваш результат:${count}`;
                 }
-                else if (answer === questionArr[i + 1]) {
+                else if (answer.toLowerCase() === questionArr[i + 1].toLowerCase()) {
                     console.log('');
                     console.log(`Верно!`);
                     console.log('');
